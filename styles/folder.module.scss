@@ -1,0 +1,13 @@
+.modal-header {
+  font-weight: bold;
+  text-transform: uppercase;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+  border-bottom: 1px solid #dee2e6;
+  &_title {
+    margin: 0;
+    font-weight: 400;
+  }
+}

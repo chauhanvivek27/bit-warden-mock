@@ -1,0 +1,130 @@
+@import "./layout.scss";
+
+.row {
+  display: flex;
+}
+.vault {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 50%;
+  font-family: $font_family;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0 15px 0;
+}
+.filter {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 25%;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  font-family: $font_family;
+  font-weight: bold;
+  margin: 20px;
+  h3 {
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #6c757d;
+    font-family: $font_family;
+  }
+  .card_add {
+    &:before {
+      content: "\F067";
+      padding-right: 10px;
+    }
+  }
+}
+
+.header {
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  background-color: rgba(0, 0, 0, 0.03);
+  padding: 0.6rem 1.25rem;
+  text-transform: uppercase;
+}
+.body {
+  flex: 1 1 auto;
+  min-height: 1px;
+  padding: 1.25rem;
+}
+.formControl {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + 0.75rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fbfbfb;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  &:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: $input_focus_color;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgb(23 93 220 / 25%);
+  }
+}
+
+.card_ul {
+  color: #495057;
+  list-style-type: none;
+  border-radius: 0.25rem;
+  font-family: $font_family;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 0;
+  .card_item {
+    &:before {
+      content: "\f00a";
+      padding-right: 10px;
+    }
+  }
+  .card_fav {
+    &:before {
+      content: "\f006";
+      padding-right: 10px;
+    }
+  }
+  .card_bin {
+    &:before {
+      content: "\f014";
+      padding-right: 10px;
+    }
+  }
+  .card_login {
+    &:before {
+      content: "\F0AC";
+      padding-right: 10px;
+    }
+  }
+  .card_card {
+    &:before {
+      content: "\f09d";
+      padding-right: 10px;
+    }
+  }
+  .card_ident {
+    &:before {
+      content: "\F24A";
+      padding-right: 10px;
+    }
+  }
+  .card_note {
+    &:before {
+      content: "\f014";
+      padding-right: 10px;
+    }
+  }
+}
+
+.folder {
+  float: right;
+}
